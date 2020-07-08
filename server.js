@@ -60,8 +60,8 @@ app.get("/scrape", function(req, res) {
         });
     });
 
-    // Send a message to the client
-    res.send("Scrape Complete");
+    // Reload the page after scrape
+    res.redirect("back");
   });
 });
 
